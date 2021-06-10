@@ -1,0 +1,179 @@
+$textGreyColor: #808080;
+$textWirteColor: #fff;
+.content {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .img-backgroud {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .cus-nav-bar {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        .back-btn {
+            width: 28px;
+            height: 28px;
+            background-image: url(../../image/back-btn.png);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 11px;
+            z-index: 2;
+        }
+    }
+    .title {
+        width: 100%;
+        text-align: center;
+        height: 25px;
+        line-height: 25px;
+        color: #fff;
+        font-size: 18px;
+        position: absolute;
+        z-index: -1;
+    }
+    .img-colour {
+        width: 192px;
+        height: 73px;
+        position: absolute;
+        top: -37px;
+        left: 50%;
+        margin-left: -96px;
+        z-index: 1;
+    }
+    .user-avatar {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        border: 6px solid #d3d3f8;
+        position: absolute;
+        top: -48px;
+        left: 50%;
+        margin-left: -45px;
+        z-index: 2;
+    }
+    .content-box {
+        display: flex;
+        height: 100vh;
+        width: 335px;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        padding-top: 129px;
+        position: relative;
+    }
+    .write-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        .bold-text {
+            font-weight: 700;
+        }
+        .text-color-grey {
+            color: $textGreyColor;
+        }
+        .margin-top-25 {
+            margin-top: 25px;
+        }
+    }
+    .backgroud-box-write {
+        background-color: #fff;
+        width: 90%;
+        border-radius: 50rpx;
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        .img-link {
+            width: 10px;
+            height: 42px;
+            position: absolute;
+            top: -28px;
+        }
+        .img-link-left {
+            left: 16px;
+        }
+        .img-link-right {
+            right: 16px;
+        }
+        .img-word {
+            width: 144px;
+            height: 81px;
+        }
+    }
+    .backgroud-box-padding-top {
+        padding: 73px 31px 40px 31px;
+    }
+    .backgroud-box-padding-bottom {
+        padding: 15px 31px 22px 31px;
+    }
+    .text-center {
+        text-align: center;
+        color: $textWirteColor;
+        margin-top: 11px;
+        .icon-good {
+            width: 15px;
+            height: 15px;
+            margin-right: 2px;
+        }
+    }
+    .flex-box {
+        display: flex;
+        width: 100%;
+        color: $textGreyColor;
+        border: none;
+        .flex-1 {
+            flex: 1;
+            text {
+                display: block;
+                .bold-color {
+                    display: inline-block;
+                    font-weight: 900;
+                    color: rgb(128, 90, 231);
+                    padding: 5Px;
+                }
+            }
+        }
+        .circle-box {
+            display: flex;
+            justify-content: center;
+            margin-top: 4px;
+            canvas,
+            image {
+                // border: 1rpx solid #eee;
+                width: 80px;
+                height: 80px;
+            }
+        }
+        .share-btn {
+            width: 160px;
+            height: 48px;
+            background-size: 100% 100%;
+        }
+        .share-friend {
+            background-image: url('../../image/btn_sharefriend@2x.png');
+            margin-right: 8px;
+        }
+        .share-friend-circle {
+            background-image: url('../../image/btn_friendcircle@2x.png');
+            margin-left: 7px;
+        }
+    }
+    .flex-space-between {
+        justify-content: space-between;
+    }
+    .bottom-box {
+        margin-bottom: 20px;
+        margin-top: 31px;
+    }
+}
